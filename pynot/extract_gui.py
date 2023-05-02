@@ -1856,8 +1856,8 @@ class ExtractGUI(QtWidgets.QMainWindow):
                         model.fit_lines[parname] = lf
                     if not model.fixed:
                         ax.set_ylabel("%s" % model.get_unicode_name(parname))
-                    if not ax.is_last_row():
-                        ax.set_xticklabels("")
+                    #if not ax.is_last_row():
+                    #    ax.set_xticklabels("")
         self.canvas_points.figure.tight_layout()
         self.update_xmask_in_points()
         self.canvas_points.draw()
